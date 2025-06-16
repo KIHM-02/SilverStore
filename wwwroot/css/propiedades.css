@@ -1,0 +1,15 @@
+﻿:root {
+    --creamy-color: #F2F1DF;
+    --creamy-grey-color: #8C8C81;
+    --white-grey-color: #F2F2F2;
+    --gray-color: #404040;
+    --black-color: #0D0D0D;
+    
+    --text-title-hero: 5em;
+    --text-subtitle: 2em;
+    --text-title: 1.5em;
+    --text-items: 1.2em;
+    --text-normal: 1em;
+    --text-medium: .9em;
+    --text-small: .7em;
+}

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SilverStore</title>
+    <!--Te permite agregar una nueva version de estilos hasheada para evitar que se desactualice con cambios-->
+    <link rel="stylesheet" href="~/css/propiedades.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/layout.css" asp-append-version="true"/>
+    <!--Te permite optimizar los estilos que se crean en ese archivo, es recomendable-obligatorio para que se carguen adecuadamente-->
+    <link rel="stylesheet" href="~/SilverStore.style.css" />
+</head>
+
+<body>
+    <header class="menu-container">
+        <nav class="main-menu">
+            <ul class="nav-content">
+                <li><a href="#" class="text-title">SilverStore</a></li>
+                <li><a href="#">Tienda</a></li>   <!--Despliega un carrusel de los productos que hay, es vista previa-->
+                <li><a href="#">Celulares</a></li>
+                <li><a href="#">Wereables</a></li>
+            </ul>
+            
+            <ul class="nav-content">
+                <li><a href="#">Soporte</a></li>
+                <li><a href="#">Carrito</a></li>
+                <li><a href="#">Mi Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <main role="main" class="">
+            @RenderBody()    <!-- Aquí se renderizará el contenido de las vistas hijas -->
+        </main>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            &copy; 2025 - SilverStore - <a href="#">Privacy</a>
+        </div>
+    </footer>
+
+</body>
+</html>
+    
+
