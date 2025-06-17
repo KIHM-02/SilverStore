@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "_LayoutAdmin";
+}
+
+<div class="admin-dashboard">
+    <h1 class="titulo-content">Dashboard</h1>
+    <p class="description-content">Bienvenido al tablero de administrador. Aqui puedes administrar el sitio.</p>
+
+    <div class="admin-actions">
+        <a asp-controller="Admin" asp-action="ManageUsers" class="admin-card">
+            <div class="card-content">
+                <i class="fas fa-users"></i>
+                <h3>Administrar Usuarios</h3>
+            </div>
+        </a>
+        <a asp-controller="Admin" asp-action="ManageProducts" class="admin-card">
+            <div class="card-content">
+                <i class="fas fa-boxes"></i>
+                <h3>Administrar Productos</h3>
+            </div>
+        </a>
+        <a asp-controller="Admin" asp-action="Bitacora" class="admin-card">
+            <div class="card-content">
+                <i class="fas fa-clipboard-list"></i>
+                <h3>Bitácora</h3>
+            </div>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Dashboard</title>
+    <link rel="stylesheet" href="~/css/propiedades.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/layout.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Dashboard.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="~/SilverStore.style.css" />
+</head>
+
+<body>
+    <header class="menu-container">
+        <nav class="main-menu">
+            <ul class="nav-content">
+                <li><a class="text-title">SilverStore</a></li>
+                <li><a asp-controller="Admin" asp-action="Dashboard">Inicio</a></li>
+                <li><a asp-controller="User" asp-action="Logout">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <main role="main" class="">
+            @RenderBody()    <!-- Aquí se renderizará el contenido de las vistas hijas -->
+        </main>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            &copy; 2025 - SilverStore
+        </div>
+    </footer>    
+
+</body>
+</html>
