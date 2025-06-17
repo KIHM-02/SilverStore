@@ -1,0 +1,76 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Preparamos el tamaño que habra entre el menu y el footer para el container */
+
+html, body{
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    padding-top: 60px; /*Es para la altura del menu*/
+    padding-bottom: 20px;
+}
+
+
+/* Continuamos con los estilos del layout menu y footer*/
+
+.text-title {
+    font-size: var(--text-title);
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.menu-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 1px 10px var(--creamy-grey-color);
+}
+
+.main-menu {
+    width: 100%;
+    height: 60px;
+    background-color: var(--creamy-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.nav-content li{
+    list-style: none;
+    margin: 0 20px;
+}
+
+.nav-content li a{
+    text-decoration: none;
+    color: var(--grey-color);
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: var(--creamy-color);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -1px 10px var(--creamy-grey-color);
+}
