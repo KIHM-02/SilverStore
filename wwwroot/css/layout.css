@@ -1,8 +1,8 @@
 ﻿* {
-    margin : 0;
-    padding : 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Preparamos el tamaño que habra entre el menu y el footer para el container */
